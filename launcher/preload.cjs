@@ -1,0 +1,2 @@
+const { contextBridge, ipcRenderer } = require("electron");
+contextBridge.exposeInMainWorld("altcordDesktop", { status: () => ipcRenderer.invoke("desktop:status"), install: () => ipcRenderer.invoke("desktop:install"), restore: () => ipcRenderer.invoke("desktop:restore"), openFolder: () => ipcRenderer.invoke("app:open-folder"), onProgress: callback => ipcRenderer.on("desktop:progress", (_event, message) => callback(message)) });

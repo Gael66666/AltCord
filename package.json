@@ -1,0 +1,17 @@
+{
+  "name": "altcord",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A plugin runtime for Discord desktop and Chromium, built as a Vencord-style alternative.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "electron launcher/main.mjs",
+    "desktop:install": "node desktop/patcher.mjs install",
+    "desktop:restore": "node desktop/patcher.mjs restore"
+  },
+  "devDependencies": {
+    "@electron/asar": "^3.2.12",
+    "electron": "^39.2.7"
+  }
+}
