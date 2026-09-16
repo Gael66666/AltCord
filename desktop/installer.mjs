@@ -9,7 +9,7 @@ import * as asar from "@electron/asar";
 if (process.versions.electron) process.noAsar = true;
 
 const root = resolve(import.meta.dirname, "..");
-const marker = "/* AltCord desktop hook v0.1.0 */";
+const marker = "/* AltCord desktop hook v0.3.0 */";
 const exists = async path => { try { await access(path, constants.F_OK); return true; } catch { return false; } };
 export async function findDiscord() {
   // Electron can be launched without LOCALAPPDATA. Fall back to the user's

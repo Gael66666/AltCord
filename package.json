@@ -1,6 +1,6 @@
 {
   "name": "altcord",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "description": "A plugin runtime for Discord desktop and Chromium, built as a Vencord-style alternative.",
   "type": "module",

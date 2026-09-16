@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AltCord",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A local plugin runtime for Discord Web.",
   "content_scripts": [{
     "matches": ["https://discord.com/*", "https://ptb.discord.com/*", "https://canary.discord.com/*"],
